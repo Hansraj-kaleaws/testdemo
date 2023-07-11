@@ -1,0 +1,10 @@
+Kibana
+https://siemens-prod1-logs.pegacloud.io/kibana/
+
+
+
+UserName -  pegalogadmin
+
+
+
+Password -  tho6wafospogaq0M
