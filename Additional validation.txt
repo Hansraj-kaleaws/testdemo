@@ -1,0 +1,27 @@
+page1-0
+page2 -4
+page3-5
+
+page1-0
+get index which is having 0 value- get 1st index
+
+create temporary pagelist and copy all the suppliers list into the temp pagelist
+loop over the temp pagelist
+ignore the 1st index-- here the page which has minumum value as 0 will be removed
+
+use same min number function to get the next minimum number
+
+@ExpressionEvaluators.min(.ProjectMilestonesPage.PM040Total(a).TOCODetails.SupplierListInTOCO().PricePerQuantity)
+
+
+Loop .ProjectMilestonesPage.PM040Total(a).TOCODetails.SupplierListInTOCO and copy into a temp page
+
+@IndexInPageList(Param.PricePerUnit,"PricePerQuantity",TempSuppliersPage.pxResults)
+
+@IndexInPageList(0,"PricePerQuantity",TempSuppliersPage.pxResults)==1
+
+@ExpressionEvaluators.min(TempSuppliersPage.pxResults().PricePerQuantity)
+
+j
+
+p
